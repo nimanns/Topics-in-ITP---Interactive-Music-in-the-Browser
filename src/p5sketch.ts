@@ -4,7 +4,7 @@ import { waveform } from "./main";
 let cnv: Renderer;
 
 const parent: HTMLDivElement = document.querySelector("div#p5canvas")!;
-const sketch = (p5: P5) => {
+export const sketch = async (p5: P5) => {
   p5.setup = () => {
     cnv = p5.createCanvas(parent.offsetWidth, 100);
     p5.frameRate(30);
@@ -29,5 +29,3 @@ const sketch = (p5: P5) => {
     p5.endShape();
   };
 };
-
-const p5 = new P5(sketch, parent);

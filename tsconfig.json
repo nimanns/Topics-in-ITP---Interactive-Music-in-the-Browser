@@ -1,15 +1,12 @@
 {
   "compilerOptions": {
     "strict": true,
-    "module": "commonjs",
+    "module": "ES6",
     "jsx": "preserve",
     "esModuleInterop": true,
     "sourceMap": true,
     "allowJs": true,
-    "lib": [
-      "es6",
-      "dom"
-    ],
+    "lib": ["es6", "dom"],
     "rootDir": "src",
     "moduleResolution": "node"
   }

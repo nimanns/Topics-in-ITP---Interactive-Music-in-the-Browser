@@ -12,8 +12,9 @@ import {
   MembraneSynth,
   MonoSynth,
   Waveform,
-  Destination
+  Destination,
 } from "tone";
+
 import { Note } from "tone/build/esm/core/type/NoteUnits";
 import { OmniOscillatorType } from "tone/build/esm/source/oscillator/OscillatorInterface";
 const synthA = new PolySynth();
@@ -57,19 +58,19 @@ delay1.connect(filter1);
 synthC.connect(filter1);
 synthA.set({
   envelope: {
-    attack: 0.01
-  }
+    attack: 0.01,
+  },
 });
 Destination.connect(waveform);
 kick.set({
   envelope: {
-    attack: 0.3
-  }
+    attack: 0.3,
+  },
 });
 kick5.set({
   envelope: {
-    attack: 0.01
-  }
+    attack: 0.01,
+  },
 });
 kick4.set({ envelope: { attack: 0.3 } });
 synthD.connect(filter2);
@@ -95,50 +96,50 @@ new Sequence(
       { note1: "C4", note2: "G4" },
       { note1: "D4", note2: "Eb4" },
       { note1: "Eb4", note2: "D4" },
-      { note1: "G4", note2: "C4" }
+      { note1: "G4", note2: "C4" },
     ],
     [
       { note1: "C5", note2: "G5" },
       { note1: "D5", note2: "Eb5" },
       { note1: "Eb5", note2: "D5" },
-      { note1: "G5", note2: "C5" }
+      { note1: "G5", note2: "C5" },
     ],
     [
       { note1: "C6", note2: "G4" },
       { note1: "D4", note2: "Eb4" },
       { note1: "Eb4", note2: "D4" },
-      { note1: "G4", note2: "C6" }
+      { note1: "G4", note2: "C6" },
     ],
     [
       { note1: "Bb3", note2: "G4" },
       { note1: "C4", note2: "F4" },
       { note1: "F4", note2: "C4" },
-      { note1: "G4", note2: "Bb3" }
+      { note1: "G4", note2: "Bb3" },
     ],
     [
       { note1: "G3", note2: "G4" },
       { note1: "Bb3", note2: "Eb4" },
       { note1: "Eb4", note2: "Bb3" },
-      { note1: "G4", note2: "G3" }
+      { note1: "G4", note2: "G3" },
     ],
     [
       { note1: "C5", note2: "G5" },
       { note1: "D5", note2: "Eb5" },
       { note1: "Eb5", note2: "D5" },
-      { note1: "G5", note2: "C5" }
+      { note1: "G5", note2: "C5" },
     ],
     [
       { note1: "C6", note2: "G4" },
       { note1: "D4", note2: "Eb4" },
       { note1: "Eb4", note2: "D4" },
-      { note1: "G4", note2: "C6" }
+      { note1: "G4", note2: "C6" },
     ],
     [
       { note1: "Bb3", note2: "G4" },
       { note1: "C4", note2: "F4" },
       { note1: "F4", note2: "C4" },
-      { note1: "G4", note2: "Bb3" }
-    ]
+      { note1: "G4", note2: "Bb3" },
+    ],
   ],
   "4n"
 ).start(0);
@@ -168,50 +169,50 @@ new Sequence(
       { note1: "C4", note2: "G4" },
       { note1: "D4", note2: "Eb4" },
       { note1: "Eb4", note2: "D4" },
-      { note1: "G4", note2: "C4" }
+      { note1: "G4", note2: "C4" },
     ],
     [
       { note1: "C5", note2: "G5" },
       { note1: "D5", note2: "Eb5" },
       { note1: "Eb5", note2: "D5" },
-      { note1: "G5", note2: "C5" }
+      { note1: "G5", note2: "C5" },
     ],
     [
       { note1: "C6", note2: "G4" },
       { note1: "D4", note2: "Eb4" },
       { note1: "Eb4", note2: "D4" },
-      { note1: "G4", note2: "C6" }
+      { note1: "G4", note2: "C6" },
     ],
     [
       { note1: "Bb3", note2: "G4" },
       { note1: "C4", note2: "F4" },
       { note1: "F4", note2: "C4" },
-      { note1: "G4", note2: "Bb3" }
+      { note1: "G4", note2: "Bb3" },
     ],
     [
       { note1: "G3", note2: "G4" },
       { note1: "Bb3", note2: "Eb4" },
       { note1: "Eb4", note2: "Bb3" },
-      { note1: "G4", note2: "G3" }
+      { note1: "G4", note2: "G3" },
     ],
     [
       { note1: "C5", note2: "G5" },
       { note1: "D5", note2: "Eb5" },
       { note1: "Eb5", note2: "D5" },
-      { note1: "G5", note2: "C5" }
+      { note1: "G5", note2: "C5" },
     ],
     [
       { note1: "C6", note2: "G4" },
       { note1: "D4", note2: "Eb4" },
       { note1: "Eb4", note2: "D4" },
-      { note1: "G4", note2: "C6" }
+      { note1: "G4", note2: "C6" },
     ],
     [
       { note1: "Bb3", note2: "G4" },
       { note1: "C4", note2: "F4" },
       { note1: "F4", note2: "C4" },
-      { note1: "G4", note2: "Bb3" }
-    ]
+      { note1: "G4", note2: "Bb3" },
+    ],
   ],
   "4n"
 ).start(0);
@@ -248,7 +249,7 @@ new Sequence(
     ["C2", "C2"],
     ["C2", "C2"],
     ["C2", "C2"],
-    ["C2", "C2", "C2"]
+    ["C2", "C2", "C2"],
   ],
   "4n"
 ).start(0);
@@ -277,7 +278,7 @@ new Sequence(
     ["C4", "F4", "Ab4"],
     ["C4", "F4", "Ab4"],
     ["C4", "F4", "Ab4"],
-    ["C4", "G4", "A4", ["C5", "G5", "C6"]]
+    ["C4", "G4", "A4", ["C5", "G5", "C6"]],
   ],
 
   "8n"
@@ -318,9 +319,9 @@ new Sequence(
         "G2",
         "Eb1",
         "C1",
-        "Eb4"
-      ]
-    ]
+        "Eb4",
+      ],
+    ],
   ],
 
   "2n."
@@ -348,7 +349,7 @@ new Sequence(
   },
   [
     ["C1", "C2", "C1", "C2"],
-    ["C1", "C2", "C1", "C2", "B1", "B1"]
+    ["C1", "C2", "C1", "C2", "B1", "B1"],
   ],
   "2n"
 ).start(0);
